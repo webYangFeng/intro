@@ -38,7 +38,7 @@ export function Hero() {
       transition: {
         delay: i * 0.05,
         duration: 0.5,
-        ease: [0.215, 0.61, 0.355, 1],
+        ease: [0.215, 0.61, 0.355, 1] as const,
       },
     }),
   };
@@ -49,7 +49,7 @@ export function Hero() {
     transition: {
       duration: 3,
       repeat: Infinity,
-      ease: "easeInOut",
+      ease: "easeInOut" as const,
     },
   };
 
